@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.wsyzj.android.offer.activity.ImageTextSortAct;
+import com.wsyzj.android.offer.activity.LottieAct;
 
 import java.util.Arrays;
 
@@ -18,7 +18,7 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView list_view;
-    private String[] mDatas = new String[]{"图文混排"};
+    private String[] mDatas = new String[]{"Lottie"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (position) {
             case 0:
-                startAct(ImageTextSortAct.class);
+                startAct(LottieAct.class);
                 break;
         }
     }
