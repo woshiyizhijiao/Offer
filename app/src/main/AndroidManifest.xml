@@ -19,6 +19,9 @@
         // Lottie
         <activity android:name=".activity.LottieAct"/>
 
+        // 自定义View
+        <activity android:name=".activity.CustomViewAct"/>
+
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.wsyzj.android.offer.activity.CustomViewAct;
 import com.wsyzj.android.offer.activity.LottieAct;
 
 import java.util.Arrays;
@@ -32,7 +33,7 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView list_view;
-    private String[] mDatas = new String[]{"Lottie"};
+    private String[] mDatas = new String[]{"Lottie", "自定义View学习"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         switch (position) {
             case 0:
                 startAct(LottieAct.class);
+                break;
+            case 1:
+                startAct(CustomViewAct.class);
                 break;
         }
     }
