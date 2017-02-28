@@ -29,6 +29,10 @@ import java.util.Arrays;
  * -- 解除项目与SVN关联
  * --- 1: .idea文件夹找到vcs.xml → vcs="svn"改为vcs=""保存
  * --- 2: 把项目根目录.svn文件夹删除
+ * 3: 减少APK大小
+ * -- 使用tinypng图片压缩
+ * -- 使用Lint工具，删除未使用的资源: http://blog.csdn.net/u011240877/article/details/54141714
+ * -- 在app gradle 添加 build.gradle{ shrinkResources true }  删除第三方中没使用到的资源
  */
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
