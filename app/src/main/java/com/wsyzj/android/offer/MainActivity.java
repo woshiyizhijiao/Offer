@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.wsyzj.android.offer.activity.CustomViewAct;
+import com.wsyzj.android.offer.activity.DragAct;
 import com.wsyzj.android.offer.activity.LottieAct;
 
 import java.util.Arrays;
@@ -33,11 +34,13 @@ import java.util.Arrays;
  * -- 使用tinypng图片压缩
  * -- 使用Lint工具，删除未使用的资源: http://blog.csdn.net/u011240877/article/details/54141714
  * -- 在app gradle 添加 build.gradle{ shrinkResources true }  删除第三方中没使用到的资源
+ * 4: Note
+ * --- http://www.apkbus.com/forum.php?mod=viewthread&tid=270630&extra=page%3D29%26filter%3Dsortid%26orderby%3Ddateline%26sortid%3D12 WebView
  */
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView list_view;
-    private String[] mDatas = new String[]{"Lottie", "自定义View学习"};
+    private String[] mDatas = new String[]{"Lottie", "自定义View学习", "仿今日头条频道管理"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 1:
                 startAct(CustomViewAct.class);
+                break;
+            case 2:
+                startAct(DragAct.class);
                 break;
         }
     }
