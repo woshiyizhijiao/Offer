@@ -9,6 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="10dp"
         android:background="@drawable/shape_rectangle_solid_white_stroke_red_1dp"
         android:paddingBottom="5dp"
         android:paddingLeft="12dp"

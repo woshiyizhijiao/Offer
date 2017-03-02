@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.wsyzj.android.offer.activity.CustomViewAct;
-import com.wsyzj.android.offer.activity.DragAct;
+import com.wsyzj.android.offer.activity.ChannelAct;
 import com.wsyzj.android.offer.activity.LottieAct;
 
 import java.util.Arrays;
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 startAct(CustomViewAct.class);
                 break;
             case 2:
-                startAct(DragAct.class);
+                startAct(ChannelAct.class);
                 break;
         }
     }

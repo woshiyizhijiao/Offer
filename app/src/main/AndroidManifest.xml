@@ -23,7 +23,7 @@
         <activity android:name=".activity.CustomViewAct"/>
 
         // 仿今日头条频道管理
-        <activity android:name=".activity.DragAct"/>
+        <activity android:name=".activity.ChannelAct"/>
 
     </application>
 
