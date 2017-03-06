@@ -3,12 +3,14 @@
           package="com.wsyzj.android.offer">
 
     <application
+        android:name=".BaseApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -21,9 +23,6 @@
 
         // 自定义View
         <activity android:name=".activity.CustomViewAct"/>
-
-        // 仿今日头条频道管理
-        <activity android:name=".activity.ChannelAct"/>
 
     </application>
 

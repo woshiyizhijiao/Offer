@@ -1,4 +1,4 @@
-package com.wsyzj.android.offer;
+package com.wsyzj.android.offer.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.wsyzj.android.offer.activity.CustomViewAct;
-import com.wsyzj.android.offer.activity.ChannelAct;
-import com.wsyzj.android.offer.activity.LottieAct;
+import com.wsyzj.android.offer.R;
 
 import java.util.Arrays;
 
@@ -24,6 +22,7 @@ import java.util.Arrays;
  * -- 当前文件以单独的一个窗口打开           shift+f4
  * -- 自动生成匹配正则表达式                 alt+enter → check regexp
  * -- 快速切换文件                          ctrl+tab
+ * -- 运行java main方法                     ctrl+shift+f10
  * 2:  SVN
  * -- 忽略文件设置 File → Setting → Ignored Files
  * --- Directory:.gradle/ && Directory:.idea/ && Directory:build/ && Directory: app/build/ && File:local.properties && Mask:*.iml
@@ -40,7 +39,7 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView list_view;
-    private String[] mDatas = new String[]{"Lottie", "自定义View学习", "仿今日头条频道管理"};
+    private String[] mDatas = new String[]{"Lottie", "自定义View学习"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,9 +60,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 1:
                 startAct(CustomViewAct.class);
-                break;
-            case 2:
-                startAct(ChannelAct.class);
                 break;
         }
     }

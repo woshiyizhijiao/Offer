@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.wsyzj.android.offer.weiget.CirclePercentView
+        android:id="@+id/circlePercentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="onClick1"
+        app:arcColor="@color/red"
+        app:arcWidth="@dimen/activity_horizontal_margin"
+        app:circleBg="@color/green"
+        app:percentTextColor="@color/blue"
+        app:percentTextSize="16sp"
+        app:radius="100dp"/>
 
 </LinearLayout>
