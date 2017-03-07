@@ -24,6 +24,9 @@
         // 自定义View
         <activity android:name=".activity.CustomViewAct"/>
 
+        // 数据库的相关操作
+        <activity android:name=".activity.SQLiteAct"/>
+
     </application>
 
 </manifest>
