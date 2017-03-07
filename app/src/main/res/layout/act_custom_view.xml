@@ -9,11 +9,10 @@
         android:id="@+id/circlePercentView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:onClick="onClick1"
-        app:arcColor="@color/red"
+        app:arcColor="#ffee00"
         app:arcWidth="@dimen/activity_horizontal_margin"
-        app:circleBg="@color/green"
-        app:percentTextColor="@color/blue"
+        app:circleBg="#8e29fa"
+        app:percentTextColor="#ffee00"
         app:percentTextSize="16sp"
         app:radius="100dp"/>
 
