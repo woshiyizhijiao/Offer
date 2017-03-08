@@ -3,15 +3,14 @@ package com.wsyzj.android.offer.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 import com.wsyzj.android.offer.R;
-import com.wsyzj.android.offer.weiget.CirclePercentView;
 
 /**
  * @author: wsyzj
  * @date: 2017-02-26 15:09
  * @comment: 自定义View
+ * -- 关闭整个应用的硬件加速 AndroidMenifest文件中application节点下添上 android:hardwareAccelerated=”false”
  * 1: 自定义View主要掌握一下四点
  * -- 绘制机制：掌握onMeasure,onLayout,onDraw及相关类的使用。
  * -- 事件传递机制：掌握dispathTouchEvent(),onInterceptEvent(),onTouchEvent()三者的相关逻辑。
@@ -51,21 +50,11 @@ import com.wsyzj.android.offer.weiget.CirclePercentView;
  */
 public class CustomViewAct extends AppCompatActivity {
 
-    private CirclePercentView mCirclePercentView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_custom_view);
-
-        mCirclePercentView = (CirclePercentView) findViewById(R.id.circlePercentView);
-        mCirclePercentView.setOnCircleClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                float percent = (float) (Math.random() * 99 + 1);
-                mCirclePercentView.setCurPercent(percent);
-            }
-        });
-
     }
+
 }

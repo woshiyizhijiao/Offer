@@ -3,7 +3,7 @@ package com.wsyzj.android.offer.offer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,13 +17,8 @@ import java.util.Set;
 public class OfferJava {
 
     public static void main(String[] array) {
-        Map<Integer, Integer> map = new HashMap<>();
-        map.put(0, 20);
-        map.put(1, 10);
-        map.put(2, 30);
-        System.out.println(map);
-        LinkedHashMap<Integer, Integer> linkedHashMap = sortHashMap(map);
-        System.out.println(linkedHashMap);
+        List<String> list = new ArrayList<>();
+        System.out.println(removeDuplicate(list));
     }
 
     /**
@@ -48,4 +43,19 @@ public class OfferJava {
         }
         return linkedHashMap;
     }
+
+    /**
+     * 去除集合中的重复元素
+     * 方法二  ，遍历集合中的元素，创建一个新的集合，如在集合中没有该元素则添加到新的集合中
+     *
+     * @param list
+     * @return
+     */
+    private static List<String> removeDuplicate(List list) {
+        HashSet hashSet = new HashSet(list);
+        list.clear();
+        list.addAll(hashSet);
+        return list;
+    }
+
 }

@@ -11,4 +11,14 @@
     <color name="blue">#FF0000FF</color>
     <color name="cf5f5f5">#f5f5f5</color>
 
+    <color name="c111">#FF111111</color>
+    <color name="c222">#FF222222</color>
+    <color name="c333">#FF333333</color>
+    <color name="c444">#FF444444</color>
+    <color name="c555">#FF555555</color>
+    <color name="c666">#FF666666</color>
+    <color name="c777">#FF777777</color>
+    <color name="c888">#FF888888</color>
+    <color name="c999">#FF999999</color>
+
 </resources>

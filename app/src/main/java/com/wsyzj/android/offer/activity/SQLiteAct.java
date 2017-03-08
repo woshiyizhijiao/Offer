@@ -46,14 +46,14 @@ public class SQLiteAct extends AppCompatActivity {
 
         ContentValues values = new ContentValues();
         values.put("auther", "东野圭吾");
-        values.put("price", 36.0);
+        values.put("price", 100.0);
         values.put("pages", 500);
         values.put("name", "白夜行");
         db.insert(BaseSQLiteOpenHelper.TABLE_NAME, null, values);
         values.clear();
 
         values.put("auther", "白岩松");
-        values.put("price", 36.0);
+        values.put("price", 500.0);
         values.put("pages", 1000);
         values.put("name", "白说");
         db.insert(BaseSQLiteOpenHelper.TABLE_NAME, null, values);
@@ -80,12 +80,9 @@ public class SQLiteAct extends AppCompatActivity {
     public void update(View view) {
         SQLiteDatabase db = mSQLiteHelper.getWritableDatabase();
 
-        db.execSQL("update " + BaseSQLiteOpenHelper.TABLE_NAME + " set price = ? where = name ?",
-                new String[]{"100.00", "我是一本书"});
-
         ContentValues values = new ContentValues();
-        values.put("price", 36.0);
-        db.update(BaseSQLiteOpenHelper.TABLE_NAME, values, "price = ?", new String[]{"500"});
+        values.put("price", 111.0);
+        db.update(BaseSQLiteOpenHelper.TABLE_NAME, values, "price = ?", new String[]{"100"});
     }
 
     /**

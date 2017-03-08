@@ -27,6 +27,9 @@
         // 数据库的相关操作
         <activity android:name=".activity.SQLiteAct"/>
 
+        // RxJava学习
+        <activity android:name=".activity.RxJavaAct"/>
+
     </application>
 
 </manifest>
