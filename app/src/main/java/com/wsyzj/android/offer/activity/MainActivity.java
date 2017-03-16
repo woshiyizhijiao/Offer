@@ -23,6 +23,7 @@ import java.util.Arrays;
  * -- 自动生成匹配正则表达式                 alt+enter → check regexp
  * -- 快速切换文件                          ctrl+tab
  * -- 运行java main方法                     ctrl+shift+f10
+ * -- 查看当前类所有的方法                   ctrl+f12
  * 2:  SVN
  * -- 忽略文件设置 File → Setting → Ignored Files
  * --- Directory:.gradle/ && Directory:.idea/ && Directory:build/ && Directory: app/build/ && File:local.properties && Mask:*.iml

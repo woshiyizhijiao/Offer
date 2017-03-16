@@ -40,7 +40,7 @@ public class CustomView extends View {
     private void initPaint() {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setColor(black);
-        mPaint.setStrokeWidth(15);
+        mPaint.setStrokeWidth(20);
     }
 
     @Override
@@ -55,7 +55,7 @@ public class CustomView extends View {
         // 画一个表格分成四个
         canvas.drawLines(new float[]{0, height / 2, width, height / 2, width / 2, 0, width / 2, height}, mPaint);
         canvas1(canvas);
-//        canvas2(canvas);
+        canvas2(canvas);
     }
 
     /**
@@ -80,14 +80,16 @@ public class CustomView extends View {
         }
     }
 
+    private int[] arcs = {30, 60, 90, 180};
+    private int[] colors = {Color.RED, Color.GREEN, Color.BLUE, Color.LTGRAY};
+
     /**
      * 画一个饼状图
      *
      * @param canvas
      */
     private void canvas2(Canvas canvas) {
-        int[] arcs = {30, 60, 90, 180};
-        int[] colors = {Color.RED, Color.GREEN, Color.BLUE, Color.LTGRAY};
+        canvas.translate(width / 2, 0);     // 把原点移动到第二个格子的正中间
 
         mPaint.setStyle(Paint.Style.FILL);
 
