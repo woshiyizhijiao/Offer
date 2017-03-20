@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 24
     buildToolsVersion '25.0.0'
+
     defaultConfig {
         applicationId "com.wsyzj.android.offer"
         minSdkVersion 16
@@ -11,6 +12,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled true      // 开启代码混淆
@@ -29,8 +31,15 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:recyclerview-v7:23.0.1'
 
-    compile 'com.airbnb.android:lottie:1.5.0'                                   // 碉堡了的动画效果
-    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.3'            // Recycler封装的框架
-    compile 'com.github.zhaokaiqiang.klog:library:1.6.0'                        // 打印Log
-    compile 'com.github.GrenderG:Toasty:1.1.3'                                  // 自定义Toast
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'                             // Retrofit
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'                       // Retrofit Gson
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'                       // Retrofit rxjava
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.2'                    // 日志拦截器
+    compile 'io.reactivex:rxandroid:1.2.1'                                      // RxJava
+    compile 'io.reactivex:rxjava:1.2.1'                                         // RxJava
+
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.3'            // RecyclerView
+    compile 'com.github.zhaokaiqiang.klog:library:1.6.0'                        // Log
+    compile 'com.github.GrenderG:Toasty:1.1.3'                                  // Toast
+    compile 'com.airbnb.android:lottie:1.5.0'                                   // Lottie
 }
