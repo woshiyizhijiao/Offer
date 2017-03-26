@@ -40,7 +40,7 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView list_view;
-    private String[] mDatas = new String[]{"Lottie", "自定义View", "数据库", "RxJava+Retrofit+Mvp"};
+    private String[] mDatas = new String[]{"Lottie", "自定义View", "数据库", "RxJava+Retrofit+Mvp", "事件传递"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +67,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 3:
                 startAct(RxJavaAct.class);
+                break;
+            case 4:
+                startAct(TouchEventAct.class);
                 break;
         }
     }

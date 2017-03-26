@@ -34,6 +34,9 @@
             android:name=".activity.RxJavaAct"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
+        // Android事件传递机制
+        <activity android:name=".activity.TouchEventAct"/>
+
     </application>
 
 </manifest>

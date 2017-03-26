@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '25.0.0'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.1'
 
     defaultConfig {
         applicationId "com.wsyzj.android.offer"
         minSdkVersion 16
-        targetSdkVersion 24
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -17,7 +17,8 @@ android {
         release {
             minifyEnabled true      // 开启代码混淆
             shrinkResources true    // 删除第三方中没使用到的资源
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true    // 优化java代码
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'      // 代码混淆的文件
         }
     }
 }
@@ -27,9 +28,9 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:24.0.1'
+    compile 'com.android.support:appcompat-v7:25.0.1'
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
 
     compile 'com.squareup.retrofit2:retrofit:2.1.0'                             // Retrofit
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'                       // Retrofit Gson
