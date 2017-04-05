@@ -1,5 +1,7 @@
 package com.wsyzj.android.offer.offer;
 
+import android.text.TextUtils;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -58,4 +60,23 @@ public class OfferJava {
         return list;
     }
 
+    /**
+     * byte转int
+     *
+     * @param b
+     * @return
+     */
+    public static int byteToInt(byte b) {
+        String s = b + "";
+        if (!TextUtils.isEmpty(s)) {
+            try {
+                return Integer.parseInt(s);
+            } catch (Exception e) {
+                e.printStackTrace();
+                return -1;
+            }
+        } else {
+            return -1;
+        }
+    }
 }
