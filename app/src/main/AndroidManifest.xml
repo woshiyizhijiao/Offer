@@ -43,6 +43,12 @@
             android:configChanges="screenSize|orientation|keyboardHidden"
             android:screenOrientation="portrait"/>
 
+        // 测试
+        <activity android:name=".activity.TestAct"/>
+
+        // ViewPager画廊效果
+        <activity android:name=".activity.ViewPagerGalleryActivity"/>
+
     </application>
 
 </manifest>

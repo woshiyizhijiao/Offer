@@ -8,7 +8,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.socks.library.KLog;
 import com.wsyzj.android.offer.R;
 import com.wsyzj.android.offer.sqlite.BaseSQLiteOpenHelper;
 
@@ -102,7 +101,6 @@ public class SQLiteAct extends AppCompatActivity {
                 String name = cursor.getString(cursor.getColumnIndex("name"));
                 int pages = cursor.getInt(cursor.getColumnIndex("pages"));
                 double price = cursor.getDouble(cursor.getColumnIndex("price"));
-                KLog.e("作者: " + auther + " 书名: " + name + " 价格: " + price + " 页数: " + pages);
             } while (cursor.moveToNext());
         }
         cursor.close();

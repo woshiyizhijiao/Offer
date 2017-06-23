@@ -46,7 +46,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "数据库",
             "RxJava+Retrofit+Mvp",
             "事件传递",
-            "登陆界面播放视频效果"};
+            "登陆界面播放视频效果",
+            "测试",
+            "ViewPager画廊效果"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +81,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 5:
                 startAct(LoginVideoAct.class);
+                break;
+            case 6:
+                startAct(TestAct.class);
+                break;
+            case 7:
+                startAct(ViewPagerGalleryActivity.class);
                 break;
         }
     }

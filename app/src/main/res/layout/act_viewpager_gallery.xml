@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             android:clipChildren="false">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="356dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"/>
+
+</FrameLayout>

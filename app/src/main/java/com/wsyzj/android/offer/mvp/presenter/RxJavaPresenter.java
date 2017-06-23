@@ -1,6 +1,5 @@
 package com.wsyzj.android.offer.mvp.presenter;
 
-import com.socks.library.KLog;
 import com.wsyzj.android.offer.model.Gank;
 import com.wsyzj.android.offer.mvp.BasePresenter;
 import com.wsyzj.android.offer.mvp.contract.RxJavaContract;
@@ -44,7 +43,7 @@ public class RxJavaPresenter extends BasePresenter<RxJavaContract.View, RxJavaCo
 
                     @Override
                     public void onNext(Gank gank) {
-                        KLog.e(gank.results.toString());
+
                     }
                 });
         addSubscribe(subscribe);

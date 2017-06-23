@@ -4,10 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.wsyzj.android.offer.BaseApp;
-
-import es.dmoral.toasty.Toasty;
-
 /**
  * @author: wsyzj
  * @date: 2017-03-07 15:17
@@ -41,7 +37,6 @@ public class BaseSQLiteOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(NAME);
-        Toasty.success(BaseApp.getBaseApp(), "数据库创建成功", 0).show();
     }
 
     /**
