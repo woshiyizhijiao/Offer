@@ -48,13 +48,13 @@ import com.wsyzj.android.offer.R;
  * ---- #ff0000         // 高精度 - 不带透明通道红色
  * ---- #aaff0000       // 高精度 - 带透明通道红色
  */
-public class CustomViewAct extends AppCompatActivity {
+public class CustomViewActivity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_custom_view);
+        setContentView(R.layout.activity_custom_view);
     }
 
 }

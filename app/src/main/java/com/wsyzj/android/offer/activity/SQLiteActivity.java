@@ -16,14 +16,14 @@ import com.wsyzj.android.offer.sqlite.BaseSQLiteOpenHelper;
  * @date: 2017-03-07 15:09
  * @comment: 数据库的相关操作
  */
-public class SQLiteAct extends AppCompatActivity {
+public class SQLiteActivity extends AppCompatActivity {
 
     private BaseSQLiteOpenHelper mSQLiteHelper;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_sqlite);
+        setContentView(R.layout.activity_sqlite);
 
         mSQLiteHelper = new BaseSQLiteOpenHelper(this, "BookStore.db", null, 3);
     }

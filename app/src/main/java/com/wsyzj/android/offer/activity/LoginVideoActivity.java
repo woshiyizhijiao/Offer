@@ -13,14 +13,14 @@ import com.wsyzj.android.offer.widget.LoginVideoView;
  * @date: 2017-04-02 17:35
  * @comment: 闪屏界面播放视频效果实现
  */
-public class LoginVideoAct extends AppCompatActivity {
+public class LoginVideoActivity extends AppCompatActivity {
 
     private LoginVideoView video_view;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_login_video);
+        setContentView(R.layout.activity_login_video);
 
         video_view = (LoginVideoView) findViewById(R.id.video_view);
         video_view.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.login_video));

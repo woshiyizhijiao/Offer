@@ -12,11 +12,11 @@ import com.wsyzj.android.offer.R;
  * @comment: 沉浸式模式
  * api :18不支持 api :19支持状态栏全透明化 api :20支持改变状态栏颜色
  */
-public class TranslucentAct extends AppCompatActivity {
+public class TranslucentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_translucent);
+        setContentView(R.layout.activity_translucent);
     }
 }

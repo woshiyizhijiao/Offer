@@ -17,7 +17,7 @@ import java.util.Arrays;
  * @date: 2017-02-22 22:25
  * @comment: 最近碉堡了的动画效果
  */
-public class LottieAct extends AppCompatActivity {
+public class LottieActivity extends AppCompatActivity {
 
     private RecyclerView recycler;
     private String[] mDatas = {"EmptyState.json", "HamburgerArrow.json", "LottieLogo1.json", "LottieLogo2.json"
@@ -26,7 +26,7 @@ public class LottieAct extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_lottie);
+        setContentView(R.layout.activity_lottie);
 
         setLottieData();
     }
@@ -36,7 +36,7 @@ public class LottieAct extends AppCompatActivity {
      */
     private void setLottieData() {
         recycler = (RecyclerView) findViewById(R.id.recycler);
-        RvLottieAdapter adapter = new RvLottieAdapter(R.layout.rv_item_lottie, Arrays.asList(mDatas));
+        RvLottieAdapter adapter = new RvLottieAdapter(R.layout.recycler_item_lottie, Arrays.asList(mDatas));
         recycler.setAdapter(adapter);
         recycler.setLayoutManager(new LinearLayoutManager(this));
     }

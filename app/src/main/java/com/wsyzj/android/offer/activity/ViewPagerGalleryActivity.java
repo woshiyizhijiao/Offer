@@ -28,7 +28,7 @@ public class ViewPagerGalleryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_viewpager_gallery);
+        setContentView(R.layout.activity_viewpager_gallery);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
         mAdapter = new VpGalleryAdapter(this, mImgs);

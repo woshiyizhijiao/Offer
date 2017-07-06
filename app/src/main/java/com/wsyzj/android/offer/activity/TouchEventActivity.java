@@ -13,12 +13,12 @@ import com.wsyzj.android.offer.R;
  * @date: 2017-03-26 13:40
  * @comment: android事件传递机制
  */
-public class TouchEventAct extends Activity {
+public class TouchEventActivity extends Activity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_touch_event);
+        setContentView(R.layout.activity_touch_event);
     }
 
     @Override

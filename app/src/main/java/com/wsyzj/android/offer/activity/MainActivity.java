@@ -65,25 +65,25 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (position) {
             case 0:
-                startAct(LottieAct.class);
+                startAct(LottieActivity.class);
                 break;
             case 1:
-                startAct(CustomViewAct.class);
+                startAct(CustomViewActivity.class);
                 break;
             case 2:
-                startAct(SQLiteAct.class);
+                startAct(SQLiteActivity.class);
                 break;
             case 3:
-                startAct(RxJavaAct.class);
+                startAct(RxJavaActivity.class);
                 break;
             case 4:
-                startAct(TouchEventAct.class);
+                startAct(TouchEventActivity.class);
                 break;
             case 5:
-                startAct(LoginVideoAct.class);
+                startAct(LoginVideoActivity.class);
                 break;
             case 6:
-                startAct(TestAct.class);
+                startAct(TestActivity.class);
                 break;
             case 7:
                 startAct(ViewPagerGalleryActivity.class);

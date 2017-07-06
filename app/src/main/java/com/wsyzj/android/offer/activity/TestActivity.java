@@ -14,7 +14,7 @@ import com.wsyzj.android.offer.bean.PacewearBridge;
  * @date: 2017-05-09 13:14
  * @comment: //TODO
  */
-public class TestAct extends AppCompatActivity {
+public class TestActivity extends AppCompatActivity {
 
 
     private WebView mWebView;
@@ -22,7 +22,7 @@ public class TestAct extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_test);
+        setContentView(R.layout.activity_test);
 
         mWebView = (WebView) findViewById(R.id.webView);
         mWebView.getSettings().setJavaScriptEnabled(true);

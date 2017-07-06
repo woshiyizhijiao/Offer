@@ -21,30 +21,30 @@
         </activity>
 
         // Lottie
-        <activity android:name=".activity.LottieAct"/>
+        <activity android:name=".activity.LottieActivity"/>
 
         // 自定义View
-        <activity android:name=".activity.CustomViewAct"/>
+        <activity android:name=".activity.CustomViewActivity"/>
 
         // 数据库的相关操作
-        <activity android:name=".activity.SQLiteAct"/>
+        <activity android:name=".activity.SQLiteActivity"/>
 
         // RxJava学习
         <activity
-            android:name=".activity.RxJavaAct"
+            android:name=".activity.RxJavaActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
         // Android事件传递机制
-        <activity android:name=".activity.TouchEventAct"/>
+        <activity android:name=".activity.TouchEventActivity"/>
 
         // 登录界面带播放视频
         <activity
-            android:name=".activity.LoginVideoAct"
+            android:name=".activity.LoginVideoActivity"
             android:configChanges="screenSize|orientation|keyboardHidden"
             android:screenOrientation="portrait"/>
 
         // 测试
-        <activity android:name=".activity.TestAct"/>
+        <activity android:name=".activity.TestActivity"/>
 
         // ViewPager画廊效果
         <activity android:name=".activity.ViewPagerGalleryActivity"/>

@@ -2,7 +2,6 @@ package com.wsyzj.android.offer.http.rx;
 
 
 import rx.Observable;
-import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 /**
@@ -18,8 +17,8 @@ public class RxSchedulers {
             public Observable<T> call(Observable<T> observable) {
                 return observable
                         .subscribeOn(Schedulers.io())
-                        .unsubscribeOn(Schedulers.io())
-                        .observeOn(AndroidSchedulers.mainThread());
+                        .unsubscribeOn(Schedulers.io());
+//                        .observeOn(mainThread());
             }
         };
     }
