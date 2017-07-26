@@ -21,7 +21,7 @@
         </activity>
 
         // Lottie
-        <activity android:name=".activity.LottieActivity"/>
+        <activity android:name=".activity.LottieActivity" android:launchMode="singleTop"/>
 
         // 自定义View
         <activity android:name=".activity.CustomViewActivity"/>

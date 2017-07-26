@@ -1,10 +1,11 @@
 package com.wsyzj.android.offer.http;
 
+import android.database.Observable;
+
 import com.wsyzj.android.offer.model.Gank;
 
 import retrofit2.http.GET;
 import retrofit2.http.Path;
-import rx.Observable;
 
 /**
  * @author: wsyzj

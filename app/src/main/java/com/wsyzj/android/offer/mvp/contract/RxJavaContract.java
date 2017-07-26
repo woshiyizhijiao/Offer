@@ -1,11 +1,8 @@
 package com.wsyzj.android.offer.mvp.contract;
 
-import com.wsyzj.android.offer.model.Gank;
 import com.wsyzj.android.offer.mvp.IModel;
-import com.wsyzj.android.offer.mvp.IView;
 import com.wsyzj.android.offer.mvp.IPresenter;
-
-import rx.Observable;
+import com.wsyzj.android.offer.mvp.IView;
 
 /**
  * @author: wsyzj
@@ -21,7 +18,7 @@ public class RxJavaContract {
     }
 
     public interface Model extends IModel {
-        Observable<Gank> getGank();
+//        Observable<Gank> getGank();
     }
 
     public interface Presenter extends IPresenter<View> {

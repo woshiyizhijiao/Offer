@@ -7,13 +7,31 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="netClick"
-        android:text="点击网络请求"/>
+        android:onClick="usage1"
+        android:text="基本使用"/>
 
     <Button
-        android:onClick="usage1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RxJava用法1"/>
+        android:onClick="thread1"
+        android:text="线程用法1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="thread2"
+        android:text="线程用法2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="operatorMap"
+        android:text="操作符map"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="operatorFlatMap"
+        android:text="操作符flatMap"/>
 
 </LinearLayout>

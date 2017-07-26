@@ -7,8 +7,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="js"
-        android:text="调用js"/>
+        android:onClick="btn"
+        android:text="测试"/>
 
     <WebView
         android:id="@+id/webView"

@@ -1,7 +1,7 @@
 package com.wsyzj.android.offer.mvp;
 
-import rx.Subscription;
-import rx.subscriptions.CompositeSubscription;
+
+import org.reactivestreams.Subscription;
 
 /**
  * @author: wsyzj
@@ -12,7 +12,7 @@ public class BasePresenter<V extends IView, M extends IModel> implements IPresen
 
     protected V mView;
     protected M mModel;
-    private CompositeSubscription mSubscription;
+//    private CompositeSubscription mSubscription;
 
     @Override
     public void attachView(V view) {
@@ -30,19 +30,19 @@ public class BasePresenter<V extends IView, M extends IModel> implements IPresen
      * @param subscription
      */
     protected void addSubscribe(Subscription subscription) {
-        if (mSubscription == null) {
-            mSubscription = new CompositeSubscription();
-        }
-        mSubscription.add(subscription);
+//        if (mSubscription == null) {
+//            mSubscription = new CompositeSubscription();
+//        }
+//        mSubscription.add(subscription);
     }
 
     /**
      * 取消订阅
      */
     public void unSubscribe() {
-        if (mSubscription != null && mSubscription.hasSubscriptions()) {
-            mSubscription.clear();
-            mSubscription = null;
-        }
+//        if (mSubscription != null && mSubscription.hasSubscriptions()) {
+//            mSubscription.clear();
+//            mSubscription = null;
+//        }
     }
 }
