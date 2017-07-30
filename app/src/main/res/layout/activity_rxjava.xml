@@ -34,4 +34,36 @@
         android:onClick="operatorFlatMap"
         android:text="操作符flatMap"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="zip1"
+        android:text="zip操作符"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="zip2"
+        android:text="zip操作符OutOfMemoryError"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="filter"
+        android:text="使用filter过滤掉不需要的数据"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sample"
+        android:text="使用sample每隔指定时间从事件取出消息"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="flowable"
+        android:text="flowable用法"/>
+
 </LinearLayout>
