@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "事件传递",
             "登陆界面播放视频效果",
             "测试",
-            "ViewPager画廊效果"};
+            "ViewPager画廊效果",
+            "ListView联动"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +88,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 7:
                 startAct(ViewPagerGalleryActivity.class);
+                break;
+            case 8:
+                startAct(ListViewLinkageActivity.class);
+                break;
+            default:
                 break;
         }
     }

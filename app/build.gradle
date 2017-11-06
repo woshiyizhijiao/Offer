@@ -44,4 +44,5 @@ dependencies {
 
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.3'            // RecyclerView
     compile 'com.airbnb.android:lottie:1.5.0'                                   // Lottie
+    compile 'com.blankj:alog:1.4.0'
 }

@@ -21,7 +21,9 @@
         </activity>
 
         // Lottie
-        <activity android:name=".activity.LottieActivity" android:launchMode="singleTop"/>
+        <activity
+            android:name=".activity.LottieActivity"
+            android:launchMode="singleTop"/>
 
         // 自定义View
         <activity android:name=".activity.CustomViewActivity"/>
@@ -48,6 +50,9 @@
 
         // ViewPager画廊效果
         <activity android:name=".activity.ViewPagerGalleryActivity"/>
+
+        // ListView和二级菜单联动
+        <activity android:name=".activity.ListViewLinkageActivity"/>
 
     </application>
 
