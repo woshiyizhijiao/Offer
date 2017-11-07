@@ -57,7 +57,7 @@ public class ListViewLinkageActivity extends AppCompatActivity {
      * 穴位数据
      */
     private List<AcupointC> getAcupointData() {
-        String result_sort = getString(R.string.result_sort);
+        String result_sort = getString(R.string.result_sort1);
         return new Gson().fromJson(result_sort, new TypeToken<List<AcupointC>>() {
         }.getType());
     }

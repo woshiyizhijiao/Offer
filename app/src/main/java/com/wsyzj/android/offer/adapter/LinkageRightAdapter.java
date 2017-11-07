@@ -4,13 +4,13 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
-import android.widget.GridView;
 import android.widget.TextView;
 
 import com.wsyzj.android.offer.R;
 import com.wsyzj.android.offer.bean.AcupointB;
 import com.wsyzj.android.offer.bean.AcupointC;
 import com.wsyzj.android.offer.tools.UIUtils;
+import com.wsyzj.android.offer.widget.ScrollGridView;
 
 import java.util.List;
 
@@ -86,7 +86,7 @@ public class LinkageRightAdapter extends BaseExpandableListAdapter {
         if (convertView == null) {
             holder = new ViewHolder();
             convertView = UIUtils.inflate(R.layout.item_right_child_linkage);
-            holder.gridView = (GridView) convertView.findViewById(R.id.gridView);
+            holder.gridView = (ScrollGridView) convertView.findViewById(R.id.gridView);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
@@ -103,6 +103,6 @@ public class LinkageRightAdapter extends BaseExpandableListAdapter {
 
     private static class ViewHolder {
         private TextView tv_index;
-        private GridView gridView;
+        private ScrollGridView gridView;
     }
 }

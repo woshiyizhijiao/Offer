@@ -101,11 +101,12 @@ public class TestActivity extends AppCompatActivity {
                 }
 
             }
-            acupointC.Letters = alphabet;
-            acupointC.Content = contents;
-            acupointCs.add(acupointC);
+            if (contents.size() != 0) {
+                acupointC.Letters = alphabet;
+                acupointC.Content = contents;
+                acupointCs.add(acupointC);
+            }
         }
-
-        LogUtil.e("解析之前的数据 " + new Gson().toJson(acupointCs));
+        LogUtil.e("解析之后的数据 " + new Gson().toJson(acupointCs));
     }
 }
