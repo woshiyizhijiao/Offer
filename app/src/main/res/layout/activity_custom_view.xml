@@ -4,9 +4,9 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <com.wsyzj.android.offer.widget.LieBaoView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center_horizontal"/>
+    <com.wsyzj.android.offer.widget.CustomView1
+        android:id="@+id/custom"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
 
 </LinearLayout>

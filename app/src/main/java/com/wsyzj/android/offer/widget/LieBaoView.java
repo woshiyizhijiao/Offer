@@ -72,10 +72,5 @@ public class LieBaoView extends View {
         Paint.FontMetrics fontMetrics = mTextPaint.getFontMetrics();
         float textY = getHeight() / 2 + (Math.abs(fontMetrics.ascent) - fontMetrics.descent) / 2;
         canvas.drawText(mCurrentProgress + "%", textX, textY, mTextPaint);
-        for (int x = 0; x < 180; x++) {
-            canvas.drawArc(mRectF, x, x + 1, false, mExcirclePaint);
-        }
-
-        canvas.drawRect(mRectF, mExcirclePaint);
     }
 }

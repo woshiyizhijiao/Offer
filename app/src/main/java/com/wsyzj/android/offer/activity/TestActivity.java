@@ -13,6 +13,10 @@ import com.wsyzj.android.offer.bean.AcupointB;
 import com.wsyzj.android.offer.bean.AcupointC;
 import com.wsyzj.android.offer.tools.LogUtil;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -33,20 +37,22 @@ public class TestActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        String t1 = getString(R.string.t1);
-        String t2 = getString(R.string.t2);
-        String t3 = getString(R.string.t3);
-        String t4 = getString(R.string.t4);
-        String t5 = getString(R.string.t5);
-        String t6 = getString(R.string.t6);
-        jsonToList(t1, "t1");
-        jsonToList(t2, "t2");
-        jsonToList(t3, "t3");
-        jsonToList(t4, "t4");
-        jsonToList(t5, "t5");
-        jsonToList(t6, "t6");
-        LogUtil.e("解析之前的数据 " + new Gson().toJson(mAcupoints));
-        listToData();
+        parseJson();
+//        String t1 = getString(R.string.t1);
+//        String t2 = getString(R.string.t2);
+//        String t3 = getString(R.string.t3);
+//        String t4 = getString(R.string.t4);
+//        String t5 = getString(R.string.t5);
+//        String t6 = getString(R.string.t6);
+//        jsonToList(t1, "t1");
+//        jsonToList(t2, "t2");
+//        jsonToList(t3, "t3");
+//        jsonToList(t4, "t4");
+//        jsonToList(t5, "t5");
+//        jsonToList(t6, "t6");
+//        LogUtil.e("解析之前的数据 " + new Gson().toJson(mAcupoints));
+//        listToData();
+
     }
 
     private void jsonToList(String t1, String type) {
@@ -108,5 +114,74 @@ public class TestActivity extends AppCompatActivity {
             }
         }
         LogUtil.e("解析之后的数据 " + new Gson().toJson(acupointCs));
+    }
+
+    private void parseJson() {
+        JSONArray array = new JSONArray();
+        for (int x = 0; x < 12; x++) {
+            switch (x) {
+                case 0:
+                    array.put(addJsonObject("足太阳膀胱经", R.string.c1));
+                    break;
+                case 1:
+                    array.put(addJsonObject("足厥阴肝经", R.string.c2));
+                    break;
+                case 2:
+                    array.put(addJsonObject("足少阳胆经", R.string.c3));
+                    break;
+                case 3:
+                    array.put(addJsonObject("手少阴心经", R.string.c4));
+                    break;
+                case 4:
+                    array.put(addJsonObject("足太阴脾经", R.string.c5));
+                    break;
+                case 5:
+                    array.put(addJsonObject("手阳明大肠经", R.string.c6));
+                    break;
+                case 6:
+                    array.put(addJsonObject("手太阳小肠经", R.string.c7));
+                    break;
+                case 7:
+                    array.put(addJsonObject("手太阴肺经", R.string.c8));
+                    break;
+                case 8:
+                    array.put(addJsonObject("足阳明胃经", R.string.c9));
+                    break;
+                case 9:
+                    array.put(addJsonObject("手厥阴心包经", R.string.c10));
+                    break;
+                case 10:
+                    array.put(addJsonObject("足少阴肾经", R.string.c11));
+                    break;
+                case 11:
+                    array.put(addJsonObject("手少阳三焦经", R.string.c12));
+                    break;
+                default:
+                    break;
+            }
+        }
+        LogUtil.e(array.toString());
+    }
+
+    private JSONObject addJsonObject(String clazz, int resId) {
+        String json = getString(resId);
+        String[] split = json.split("、");
+
+        try {
+            JSONObject obj1 = new JSONObject();
+            obj1.put("class", clazz);
+
+            JSONArray array = new JSONArray();
+            for (int x = 0; x < split.length; x++) {
+                JSONObject obj2 = new JSONObject();
+                obj2.put("acupoint", split[x]);
+                array.put(obj2);
+            }
+            obj1.put("content", array);
+            return obj1;
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
