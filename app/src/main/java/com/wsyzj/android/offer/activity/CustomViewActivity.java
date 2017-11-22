@@ -3,10 +3,8 @@ package com.wsyzj.android.offer.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 import com.wsyzj.android.offer.R;
-import com.wsyzj.android.offer.widget.CustomView1;
 
 /**
  * @author: wsyzj
@@ -52,18 +50,10 @@ import com.wsyzj.android.offer.widget.CustomView1;
  */
 public class CustomViewActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_view);
-        final CustomView1 viewById = (CustomView1) findViewById(R.id.custom);
-        viewById.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                viewById.setProgress(90);
-            }
-        });
     }
 
 }

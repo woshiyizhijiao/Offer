@@ -37,7 +37,7 @@ public class TestActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        parseJson();
+//        parseJson();
 //        String t1 = getString(R.string.t1);
 //        String t2 = getString(R.string.t2);
 //        String t3 = getString(R.string.t3);
@@ -52,7 +52,182 @@ public class TestActivity extends AppCompatActivity {
 //        jsonToList(t6, "t6");
 //        LogUtil.e("解析之前的数据 " + new Gson().toJson(mAcupoints));
 //        listToData();
+        test();
+        test1();
+    }
 
+    private void test1() {
+        try {
+            JSONObject obj1 = new JSONObject();
+            JSONArray array1 = new JSONArray();
+
+            array1.put(obj1("461", "32", "会阴穴"));
+            array1.put(obj1("499", "30", "曲骨穴"));
+            array1.put(obj1("508", "30", "中极穴"));
+            array1.put(obj1("491", "30", "关元穴"));
+            array1.put(obj1("501", "30", "石门穴"));
+            array1.put(obj1("497", "30", "气海穴"));
+            array1.put(obj1("507", "30", "阴交穴"));
+            array1.put(obj1("507", "30", "神厥穴"));
+            array1.put(obj1("518", "30", "水分穴"));
+            array1.put(obj1("521", "30", "下脘穴"));
+            array1.put(obj1("251", "30", "建里穴"));
+            array1.put(obj1("520", "30", "中脘穴"));
+            array1.put(obj1("333", "30", "上脘穴"));
+            array1.put(obj1("333", "30", "巨厥穴"));
+            array1.put(obj1("261", "30", "鸠尾穴"));
+            array1.put(obj1("479", "30", "中庭穴"));
+            array1.put(obj1("479", "30", "颤中穴"));
+            array1.put(obj1("454", "30", "玉堂穴"));
+            array1.put(obj1("484", "30", "紫宫穴"));
+            array1.put(obj1("228", "30", "华盖穴"));
+            array1.put(obj1("418", "30", "璇玑穴"));
+            array1.put(obj1("380", "34", "天突穴"));
+            array1.put(obj1("523", "34", "廉泉穴"));
+            array1.put(obj1("162", "29", "承浆穴"));
+
+
+            // 神厥穴 巨厥穴 颤中穴
+//            会阴穴
+//                    曲骨穴
+//            中极穴
+//                    关元穴
+//            石门穴
+//                    气海穴
+//            阴交穴
+//                    神厥穴
+//            水分穴
+//                    下脘穴
+//            建里穴
+//                    中脘穴
+//            上脘穴
+//                    巨厥穴
+//            鸠尾穴
+//                    中庭穴
+//            颤中穴
+//                    玉堂穴
+//            紫宫穴
+//                    华盖穴
+//            璇玑穴
+//                    天突穴
+//            廉泉穴
+//                    承浆穴
+
+            obj1.put("dict", array1);
+            LogUtil.e(obj1.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void test() {
+        try {
+            JSONObject obj1 = new JSONObject();
+            JSONArray array1 = new JSONArray();
+
+            array1.put(obj1("461", "32", "长强穴"));
+            array1.put(obj1("433", "32", "腰俞穴"));
+            array1.put(obj1("432", "32", "腰阳关"));
+            array1.put(obj1("286", "32", "命门穴"));
+            array1.put(obj1("416", "32", "悬枢穴"));
+            array1.put(obj1("238", "32", "脊中穴"));
+            array1.put(obj1("478", "32", "中枢穴"));
+            array1.put(obj1("432", "32", "筋缩穴"));
+            array1.put(obj1("467", "32", "至阳穴"));
+            array1.put(obj1("280", "32", "灵台穴"));
+            array1.put(obj1("343", "32", "神道穴"));
+            array1.put(obj1("341", "32", "身柱穴"));
+            array1.put(obj1("371", "32", "陶道穴"));
+            array1.put(obj1("181", "32", "大椎穴"));
+            array1.put(obj1("649", "29", "哑门穴"));
+            array1.put(obj1("621", "29", "风府穴"));
+            array1.put(obj1("630", "29", "脑户穴"));
+            array1.put(obj1("633", "29", "强间穴"));
+            array1.put(obj1("624", "29", "后顶穴"));
+            array1.put(obj1("432", "32", "百会穴"));
+            array1.put(obj1("632", "29", "前顶穴"));
+            array1.put(obj1("432", "32", "卤会穴"));
+            array1.put(obj1("636", "29", "上星穴"));
+            array1.put(obj1("637", "29", "神庭穴"));
+            array1.put(obj1("364", "29", "素髎穴"));
+            array1.put(obj1("357", "29", "水沟穴"));
+            array1.put(obj1("192", "29", "兑端穴"));
+            array1.put(obj1("432", "32", "龈交穴"));
+
+
+//            卤会穴 龈交穴 百会穴 筋缩穴
+
+//            命门穴
+//                    悬枢穴
+//            脊中穴
+//                    中枢穴
+//            筋缩穴
+//                    至阳穴
+//            灵台穴
+//                    神道穴
+//            身柱穴
+//                    陶道穴
+//            大椎穴
+//                    哑门穴
+//            风府穴
+//                    脑户穴
+//            强间穴
+//                    后顶穴
+//            百会穴
+//                    前顶穴
+//            卤会穴
+//                    上星穴
+//            神庭穴
+//                    素髎穴
+//            水沟穴
+//                    兑端穴
+//            龈交穴
+
+
+            obj1.put("dict", array1);
+            LogUtil.e(obj1.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private JSONObject obj1(String ArticleID, String ClassID, String Title) {
+        try {
+            JSONObject object = new JSONObject();
+            object.put("key", array());
+            object.put("string", array2(ArticleID, ClassID, Title));
+            return object;
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
+    public JSONArray array() {
+        try {
+            JSONArray array = new JSONArray();
+            array.put(0, "ArticleID");
+            array.put(1, "ClassID");
+            array.put(2, "Title");
+            return array;
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public JSONArray array2(String ArticleID, String ClassID, String Title) {
+        try {
+            JSONArray array = new JSONArray();
+            array.put(0, ArticleID);
+            array.put(1, ClassID);
+            array.put(2, Title);
+            return array;
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     private void jsonToList(String t1, String type) {
