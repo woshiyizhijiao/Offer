@@ -1,6 +1,6 @@
 #  记录下可能需要用到的
 ## markdown常见用法
-https://www.cnblogs.com/liugang-vip/p/6337580.html
+http://www.jianshu.com/p/q81RER
 ## Studio常见错误
 1Gradle 'AnimatedPieView-master' project refresh failed
     Error:This Gradle plugin requires Studio 3.0 minimum
