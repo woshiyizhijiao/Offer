@@ -4,8 +4,8 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <com.wsyzj.android.offer.widget.RadarView
-        android:id="@+id/custom"
+    <com.wsyzj.android.offer.widget.PieChatView
+        android:id="@+id/pieChatView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
