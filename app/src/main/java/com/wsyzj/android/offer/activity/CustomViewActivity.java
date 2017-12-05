@@ -62,7 +62,7 @@ public class CustomViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_view);
 
-        pieChatView();
+//        pieChatView();
     }
 
     /**

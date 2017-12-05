@@ -1,5 +1,6 @@
 package com.wsyzj.android.offer.widget;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -7,6 +8,7 @@ import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.animation.LinearInterpolator;
 
 import com.wsyzj.android.offer.bean.PieChat;
 
@@ -54,6 +56,7 @@ public class PieChatView extends View {
      */
     public void setPieChats(List<PieChat> pieChats) {
         mPieChats = pieChats;
+        setProgressAnim();
         invalidate();
     }
 
@@ -86,5 +89,25 @@ public class PieChatView extends View {
             canvas.drawArc(mRectF, currentStartAngle, radian, true, mPaint);
             currentStartAngle += radian;
         }
+    }
+
+    /**
+     * 设置动画
+     */
+    private void setProgressAnim() {
+        if (mPieChats == null && mPieChats.size() == 0) {
+            return;
+        }
+
+        ValueAnimator animator = ValueAnimator.ofFloat(0, mPieChats.size());
+        animator.setDuration(3000);
+        animator.setInterpolator(new LinearInterpolator());
+        animator.start();
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+
+            }
+        });
     }
 }
