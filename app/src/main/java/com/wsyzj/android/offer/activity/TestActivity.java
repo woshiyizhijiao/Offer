@@ -11,7 +11,9 @@ import com.wsyzj.android.offer.R;
 import com.wsyzj.android.offer.bean.AcupointA;
 import com.wsyzj.android.offer.bean.AcupointB;
 import com.wsyzj.android.offer.bean.AcupointC;
+import com.wsyzj.android.offer.bean.AcupointD;
 import com.wsyzj.android.offer.tools.LogUtil;
+import com.wsyzj.android.offer.tools.LogUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -52,8 +54,21 @@ public class TestActivity extends AppCompatActivity {
 //        jsonToList(t6, "t6");
 //        LogUtil.e("解析之前的数据 " + new Gson().toJson(mAcupoints));
 //        listToData();
-        test();
-        test1();
+//        test();
+//        test1();
+        testa();
+    }
+
+    private void testa() {
+        AcupointD acupointD = new Gson().fromJson(getString(R.string.twelve_meridians_new), AcupointD.class);
+        List<AcupointD.ArrayBeanX.ArrayBean> array = acupointD.getArray().getArray();
+        int count = 0;
+        for (int x = 0; x < array.size(); x++) {
+            for (int y = 0; y < array.size(); y++) {
+                count++;
+            }
+        }
+        LogUtils.e(count + " ---------------------------------------------------");
     }
 
     private void test1() {

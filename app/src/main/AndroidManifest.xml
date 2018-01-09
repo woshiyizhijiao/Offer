@@ -54,6 +54,12 @@
         // ListView和二级菜单联动
         <activity android:name=".activity.ListViewLinkageActivity"/>
 
+        // 撒红包
+        <activity android:name=".activity.RedPacketActivity"/>
+
+        // 红包雨
+        <activity android:name=".activity.RedPacketRainActivity"/>
+
     </application>
 
 </manifest>

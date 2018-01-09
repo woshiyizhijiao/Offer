@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/c4caf50">
+
+
+    <com.wsyzj.android.offer.widget.RedPacketRainView
+        android:id="@+id/red_packet_rain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_red_sum"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="红包金额:0"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="start"
+            android:text="开始"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="stop"
+            android:text="结束"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
