@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.wsyzj.android.offer.R;
-import com.wsyzj.android.offer.widget.RedPacketRain;
+import com.wsyzj.android.offer.bean.RedPacketRain;
 import com.wsyzj.android.offer.widget.RedPacketRainView;
 
 import java.util.ArrayList;
@@ -36,31 +36,31 @@ public class RedPacketRainActivity extends Activity {
 
     private List<RedPacketRain> getRedPacketData() {
         List<RedPacketRain> redPacketRains = new ArrayList<>();
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
-        redPacketRains.add(new RedPacketRain(this, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 0.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 0.3, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 0.4, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 0.5, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 0.6, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 0.7, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 0.8, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 0.9, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 1.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 2.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 3.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 4.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 5.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 6.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 7.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 8.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 9.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 11.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 22.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 33.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 44.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 55.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 66.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 77.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
+        redPacketRains.add(new RedPacketRain(this, 88.1, BitmapFactory.decodeResource(getResources(), R.drawable.red_packet)));
         return redPacketRains;
     }
 
