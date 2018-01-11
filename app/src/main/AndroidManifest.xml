@@ -60,6 +60,9 @@
         // 红包雨
         <activity android:name=".activity.RedPacketRainActivity"/>
 
+        // 撒红包
+        <activity android:name=".activity.SaRedPacketActivity"/>
+
     </application>
 
 </manifest>

@@ -51,7 +51,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "ViewPager画廊效果",
             "ListView联动",
             "撒红包效果",
-            "红包雨"};
+            "红包雨",
+            "撒红包"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,6 +100,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 10:
                 startAct(RedPacketRainActivity.class);
+                break;
+            case 11:
+                startAct(SaRedPacketActivity.class);
                 break;
             default:
                 break;

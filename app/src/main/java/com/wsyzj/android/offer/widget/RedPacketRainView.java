@@ -110,8 +110,8 @@ public class RedPacketRainView extends View {
             }
         });
         mRedPacketAnim.setInterpolator(new DecelerateInterpolator());
-        mRedPacketAnim.setDuration(0);
         mRedPacketAnim.setRepeatCount(ValueAnimator.INFINITE);
+        mRedPacketAnim.setDuration(1);
     }
 
     @Override
