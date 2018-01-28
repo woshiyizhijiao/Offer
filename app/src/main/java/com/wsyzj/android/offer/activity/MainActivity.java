@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "ListView联动",
             "撒红包效果",
             "红包雨",
-            "撒红包"};
+            "撒红包",
+            "转盘"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +104,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 11:
                 startAct(SaRedPacketActivity.class);
+                break;
+            case 12:
+                startAct(TurntableActivity.class);
                 break;
             default:
                 break;

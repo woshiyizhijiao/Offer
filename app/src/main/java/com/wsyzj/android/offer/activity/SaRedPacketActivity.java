@@ -55,6 +55,21 @@ public class SaRedPacketActivity extends Activity {
         redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
         redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
         redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
+        redPackets.add(new SaRedPacket(this, R.drawable.red_packet));
         return redPackets;
     }
 
