@@ -27,7 +27,7 @@ public class TestActivity extends AppCompatActivity {
 
         try {
             mClickRpPlayer = new MediaPlayer();
-            AssetFileDescriptor file = getResources().openRawResourceFd(R.raw.red_packet_rain);
+            AssetFileDescriptor file = getResources().openRawResourceFd(R.raw.red_packet_click_voice);
             mClickRpPlayer.setDataSource(file.getFileDescriptor(), file.getStartOffset(), file.getLength());
             mClickRpPlayer.prepare();
             file.close();
