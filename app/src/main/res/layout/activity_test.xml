@@ -4,10 +4,8 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <Button
+    <com.wsyzj.android.offer.widget.TestCustomView1
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClick"
-        android:text="Test"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

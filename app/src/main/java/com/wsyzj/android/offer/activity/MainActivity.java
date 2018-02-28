@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "撒红包效果",
             "红包雨",
             "撒红包",
-            "转盘"};
+            "转盘",
+            "文件操作"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +109,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             case 12:
                 startAct(TurntableActivity.class);
                 break;
+            case 13:
+                startAct(FileOperationActivity.class);
             default:
                 break;
         }
