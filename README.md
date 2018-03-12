@@ -13,3 +13,6 @@ http://www.jianshu.com/p/q81RER
 - 把具体Module目录下的build.gradle中的apply plugin: ‘com.neenbedankt.android-apt’删除
 - 同时把dependencies中原来使用apt的改为annotationProcessor，然后Sync Now即可
 
+4. Error: style attribute '@android:attr/windowEnterAnimation' not found.
+- 在Project/gradle.properties中添加 android.enableAapt2=false
+
