@@ -4,14 +4,10 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <com.wsyzj.android.offer.widget.ClockView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-    <com.wsyzj.android.offer.widget.PieChatView
-        android:id="@+id/pieChatView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"/>
+    <com.wsyzj.android.offer.widget.BuyLimitButton
+        android:id="@+id/buyLimitButton"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_margin="50dp"/>
 
 </LinearLayout>

@@ -5,11 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.wsyzj.android.offer.R;
-import com.wsyzj.android.offer.bean.PieChat;
-import com.wsyzj.android.offer.widget.PieChatView;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.wsyzj.android.offer.widget.BuyLimitButton;
 
 /**
  * @author: wsyzj
@@ -54,29 +50,13 @@ import java.util.List;
  * ---- #aaff0000       // 高精度 - 带透明通道红色
  */
 public class CustomViewActivity extends AppCompatActivity {
-    private int[] mColors = {0xFFCCFF00, 0xFF6495ED, 0xFFE32636, 0xFF800000, 0xFF808000, 0xFFFF8C69, 0xFF808080,
-            0xFFE6B800, 0xFF7CFC00};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_view);
 
-//        pieChatView();
-    }
-
-    /**
-     * 饼状图
-     */
-    private void pieChatView() {
-        List<PieChat> pieChats = new ArrayList<>();
-        pieChats.add(new PieChat(mColors[0], 0.1f));
-        pieChats.add(new PieChat(mColors[1], 0.25f));
-        pieChats.add(new PieChat(mColors[2], 0.25f));
-        pieChats.add(new PieChat(mColors[3], 0.35f));
-        pieChats.add(new PieChat(mColors[4], 0.05f));
-
-        PieChatView pieChatView = (PieChatView) findViewById(R.id.pieChatView);
-        pieChatView.setPieChats(pieChats);
+        BuyLimitButton buyLimitButton = findViewById(R.id.buyLimitButton);
+        buyLimitButton.startAnim();
     }
 }
