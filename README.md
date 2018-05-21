@@ -16,3 +16,7 @@ http://www.jianshu.com/p/q81RER
 4. Error: style attribute '@android:attr/windowEnterAnimation' not found.
 - 在Project/gradle.properties中添加 android.enableAapt2=false
 
+5. Error:Failed to open zip file.
+   Gradle's dependency cache may be corrupt (this sometimes occurs after a network connection timeout.)
+- 将gradle-wrapper-gradle-wrapper.properties的distributionUrl 改为和已有项目相同的路径
+- 将项目build.gradle的classpath 改为和已有项目相同的路径
